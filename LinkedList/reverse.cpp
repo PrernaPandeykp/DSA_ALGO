@@ -42,6 +42,7 @@ int main(){
     cout<<" ";
 
     head=reverse(head);
+    if()
     display(head);
 
     return 0;

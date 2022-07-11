@@ -21,7 +21,7 @@ node* solve(node* l1,node* l2){
     node* temp=dummy;
     int carry=0;
 
-    while(l1 || l2 || carry){
+    while(l1!=NULL || l2!=NULL || carry){
         int s=0;
         if(l1!=NULL){
             s+=l1->data;
@@ -35,6 +35,7 @@ node* solve(node* l1,node* l2){
         carry=s/10;
 
         node *newnode=new node();
+        newnode->data=s%10;
         temp->next=newnode;
         temp=temp->next;
     }
@@ -77,8 +78,8 @@ int main(){
     cout<<" ";
     cout<<"list 2:";
     display(head2);
-    solve(head1,head2);
-    display(head);
+    node *head=solve(head1,head2);
+    display(solve(head1,head2));
     
     return 0;
 

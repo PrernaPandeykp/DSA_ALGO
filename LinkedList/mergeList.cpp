@@ -72,8 +72,8 @@ int main(){
     cout<<" ";
     cout<<"list 2:";
     display(head2);
-    node *head=merge(head1,head2);
-    display(head);
+    // node *head=merge(head1,head2);
+    display(merge(head1,head2));
     
     return 0;
 

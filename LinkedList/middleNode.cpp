@@ -29,9 +29,7 @@ node* solve(struct node* head){
         slow=slow->next;
         fast=fast->next->next;
     }
-    
     return slow;
-
 }
 void display(struct node* head){
     while(head != NULL) {
