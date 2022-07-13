@@ -14,6 +14,13 @@ struct Node{
     
 };
 
+int count(Node *root,int &c){
+    if(root==NULL) return ;
+    
+    c++;
+    preOrder(root->left);
+    preOrder(root->right);
+}
 void preOrder(Node *root){
     if(root==NULL) return ;
     
@@ -34,6 +41,7 @@ void postOrder(Node *root){
     postOrder(root->left);
     postOrder(root->right);
     cout<<root->data;
+
 }
 
 
@@ -47,5 +55,11 @@ int main(){
     inOrder(root);
     cout<<endl;
     postOrder(root);
+
+    int c=0;
+    count(root,c);
+    cout<<c;
+
+
 
 }
