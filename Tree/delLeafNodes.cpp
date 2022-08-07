@@ -44,4 +44,12 @@ int main(){
     cout<<endl;
     inOrder(solve(root));
     
+<<<<<<< HEAD
+=======
+    
+
+
+
+
+>>>>>>> 605aff4a63210e8fd1941d13429ce4cd2dffd5ce
 }
