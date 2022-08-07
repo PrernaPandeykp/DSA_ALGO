@@ -44,9 +44,4 @@ int main(){
     cout<<endl;
     inOrder(solve(root));
     
-    
-
-
-
-
 }
