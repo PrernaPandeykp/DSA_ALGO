@@ -1,0 +1,4 @@
+SELECT MAX(col) 
+FROM table 
+WHERE col NOT IN ( SELECT MAX(col) 
+                   FROM table);
