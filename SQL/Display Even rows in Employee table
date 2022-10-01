@@ -1,0 +1,1 @@
+Select * from(Select rownum as rno,E.* from Employee) where Mod(rno,2)=0;
